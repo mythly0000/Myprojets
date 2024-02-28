@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #image{
+        text-align: center;
+        }
+      img{
+        display: block;
+        margin: auto ;
+      }
+      #one:hover{
+        background-color: green;
+        color:white ;
+      }
+      #two:hover{
+        background-color: red;
+        color: white;
+      }
+      button{
+        border-radius: 10px;
+        }
+      body{
+        background-image: url(https://img.freepik.com/free-vector/large-fun-circus-tent_1308-30860.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699056000&semt=sph);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+      }
+    </style>
+</head>
+<body>
+    <div id="image" >
+    
+   <h1 style="color: red; text-decoration:underline;">switch</h1> 
+   <button  onclick="onfun()" id="one" style="color: green;">on</button>
+   <button  onclick="offfun()" id="two" style="color: red;">off</button>
+    <img id="on"/><img id="off"/>
+  
+  </div>
+    <script>
+       function onfun(){
+       let a=document.getElementById("on")
+       let b=document.getElementById("off")
+       a.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png")
+       b.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png")
+       b.style.height="200px"
+       b.style.width="200px"
+       a.style.height="100px"
+       a.style.width="200px"      
+      } 
+      function offfun(){
+        let a=document.getElementById("on")
+       let b=document.getElementById("off")
+       a.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png")
+       b.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png")
+       b.style.height="260px"
+       b.style.width="200px"
+       a.style.height="100px"
+       a.style.width="200px" 
+      
+      }
+         
+    </script>
+    
+</body>
+</html>

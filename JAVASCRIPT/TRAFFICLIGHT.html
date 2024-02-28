@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic</title>
+    <style>
+        body{
+            background-color: aqua;
+            
+        }
+        .row{
+            display: flex;
+        }
+        .col1{
+            width: 300px;
+        }
+        .col2{
+            background-color: black;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 250px;
+            width: 300px;
+            border-radius: 75px;
+        }
+        .stop,.ready,.go{
+            height: 100px;
+            width: 100px;
+            margin:5px;
+            border-radius: 50%;
+            margin-left: 100px;
+            background-color: cornsilk;
+            font-size: 50px;
+        }
+        .col1{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 150px;
+            justify-content: space-evenly;
+            color: white;
+            margin-left: 100px;
+            font-size: 50px;
+        }
+        #stop0,#stop1,#stop2{
+            border-radius: 15px;
+            padding-left: 15px;
+            background-color: black;
+        }
+        h1{
+            width: 50%;
+            text-align: end;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Light</h1>
+    <div class="row">
+        <div class="col1">
+            <div id="stop0" onclick="s()">Stop</div>
+            <div id="stop1" onclick="r()" >Ready</div>
+            <div id="stop2" onclick="g()">Go</div>
+        </div>
+            <div class="col2">
+            <div class="stop" id="stop"></div><br/>
+            <div class="ready" id="ready"></div><br/>
+            <div class="go" id="go"></div>
+        </div>
+    </div>
+    <script>
+        function s(){
+         document.getElementById("stop").style.backgroundColor="red" 
+         document.getElementById("ready").style.backgroundColor = "white"
+         document.getElementById("go").style.backgroundColor = "white"
+         document.getElementById("stop0").style.backgroundColor="red"
+         document.getElementById("stop1").style.backgroundColor="black"
+         document.getElementById("stop2").style.backgroundColor="black"
+        }
+        function r(){
+         document.getElementById("ready").style.backgroundColor="yellow" 
+         document.getElementById("stop").style.backgroundColor = "white";
+         document.getElementById("go").style.backgroundColor = "white";
+         document.getElementById("stop0").style.backgroundColor="black"
+         document.getElementById("stop1").style.backgroundColor="yellow"
+         document.getElementById("stop2").style.backgroundColor="black"
+        }
+        function g(){
+         document.getElementById("go").style.backgroundColor="green" 
+         document.getElementById("stop").style.backgroundColor = "white"
+         document.getElementById("ready").style.backgroundColor = "white"
+         document.getElementById("stop0").style.backgroundColor="black"
+         document.getElementById("stop1").style.backgroundColor="black"
+         document.getElementById("stop2").style.backgroundColor="green"
+        }
+    </script>
+</body>
+</html>

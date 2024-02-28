@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 25px;
+            width: 50px;
+            border-radius: 10px;
+            color: rgb(97, 17, 17);
+            font-size: 15px;
+        }
+        body{
+            background-image: url(https://img.freepik.com/free-photo/beautiful-tourist-looking-away-pointing-that-direction-with-copy-space_23-2148521241.jpg?t=st=1709106952~exp=1709110552~hmac=2504e170c82df24b49ed75374837533e7be293453ef0b4f6f5ae534f1c6a5ed5&w=826);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: rgb(97, 17, 17);
+            font-size: 20px;
+            }
+        button:hover{
+           background-color:rgb(179, 27, 27) ;
+        }
+        input{
+            height: 30px;
+            width: 200px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form>
+    <label ><b>Add to Cart</b></label><br/><br/>
+    <input type="text" id="by"style="border-radius: 10px;"/>
+</form>
+<br/>
+    <button onclick="add()">Add</button>
+    <ul id="by1">
+    </ul>
+    <h1>My Cart Items</h1>
+          
+    <script>
+        function add(){
+           let a=document.getElementById("by").value
+           document.getElementById("by1").innerHTML+=`<ul><li>${a}</li><ul>`
+           let b=document.getElementById("by").value=""
+        }
+    </script>
+    
+</body>
+</html>
