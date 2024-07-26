@@ -1,0 +1,73 @@
+.header{
+    background-color: rgb(165, 42, 42);
+}
+.navbar{
+    float: right;
+    padding: 10px; 
+}
+a{
+    color: aliceblue;
+}
+.front{
+    background-color:  rgb(216, 155, 155);
+    height: auto;
+    width: auto;
+}
+.truck{
+    display: flex;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 40px 40px;
+    border: 10px;
+}
+#para{
+     position: 50% 50%;
+}
+h1{
+   color:rgb(165, 42, 42);
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: 25px; 
+    padding: 30px; 
+}
+footer{
+    background-color: rgb(165, 42, 42);
+    font-size: medium;
+    height: 50px;
+    width: auto;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail-text {
+    font-size: 20px;
+    color: rgb(165, 42, 42);
+    margin: 0;
+}
+
+button {
+    color: white;
+    background-color: rgb(165, 42, 42);
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
